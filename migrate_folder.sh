@@ -2,6 +2,8 @@
 #ssh-copy-id to remote server first - folder over SSH migration
 #this tool hopefully will migrate localhost folder to remote Linux server
 #most likely not apropriate with large folder and slow network connection
+#/etc/sudoers #Defaults    requiretty
+#install pv
 
 # Die if no input given
 [ $# -ne 2 ] && { echo "Usage, full path: $0 LocalFolder RemoteFolder"; exit 1; }
