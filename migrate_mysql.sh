@@ -32,7 +32,7 @@ echo ""
 MySQLD=`which mysqldump`
 MySQL=`which mysql`
 #dump db to remote server
-$MySQLD --user="$myuser" --password="$mypass" --databases "$mydb" | ssh "$sshruser"@"$sshrip" 'cat - | mysql --user=root --password='$myrrpass''
+$MySQLD --user="$myuser" --password="$mypass" --databases "$mydb" | pv | ssh "$sshruser"@"$sshrip" 'cat - | mysql --user=root --password='$myrrpass''
 if [ $? -eq 0 ]; then echo OK; else echo BAD; fi
 
 #create new user and grant access to migrated db
