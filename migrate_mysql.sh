@@ -2,6 +2,8 @@
 #ssh-copy-id to remote server first - mysql over SSH migration
 #this tool hopefully will migrate localhost MySQL DB and create user to remote MySQL Linux server
 #most likely not apropriate with large database and slow network connection
+#/etc/sudoers #Defaults    requiretty
+#install pv
 
 #Input data as parameter
 mydb="$1"
