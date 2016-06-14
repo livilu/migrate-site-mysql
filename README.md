@@ -1,5 +1,5 @@
 # migrate-sire-mysql
-Requirements:
+Requirements:  
 1. Copy public ssh key to remote server - ssh-copy-id
 2. install pv which is a pipe meter to provides some output during the transfer
 3. Edit /etc/sudoers and comment #Defaults    requiretty - no security benefit
