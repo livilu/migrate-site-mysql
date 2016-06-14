@@ -4,5 +4,5 @@ Requirements:
 2. install pv which is a pipe meter to provides some output during the transfer  
 3. Edit /etc/sudoers and comment #Defaults    requiretty - no security benefit  
 
-migrate_folder.sh will migrate a local folder to a new remote location - folder will be created as well, recursive
+migrate_folder.sh will migrate a local folder to a new remote location - folder will be created as well, recursive  
 migrate_mysql.sh  will migrate a local MySQL DB to a remote server. Script will handle the new MySQL user creation on remote side as well
