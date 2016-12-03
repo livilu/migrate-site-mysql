@@ -1,4 +1,4 @@
-# migrate-sire-mysql
+# migrate-site-mysql over SSH
 Requirements:  
 1. Copy public ssh key to remote server - ssh-copy-id  
 2. install pv which is a pipe meter to provides some output during the transfer  
